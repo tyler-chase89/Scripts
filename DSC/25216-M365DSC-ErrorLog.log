@@ -1,0 +1,957 @@
+[2024/03/20 01:06:42]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_SCAutoSensitivityLabelPolicy\MSFT_SCAutoSensitivityLabelPolicy.psm1: line 833
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\SecurityAndComplianceExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:06:57]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_SCAutoSensitivityLabelRule\MSFT_SCAutoSensitivityLabelRule.psm1: line 1191
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\SecurityAndComplianceExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:19]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaDirectoryAdministrativeUnit<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.DirectoryManagement\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 34975
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAdministrativeUnit\MSFT_AADAdministrativeUnit.psm1: line 1018
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:19]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgApplication<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Applications\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 13336
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADApplication\MSFT_AADApplication.psm1: line 891
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:20]
+{InvalidOperation}
+System.Exception: [AccessDenied] : You cannot perform the requested operation, required scopes are missing in the token.
+"Error during Export:"
+at Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 16518
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationContextClassReference\MSFT_AADAuthenticationContextClassReference.psm1: line 335
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:21]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29855
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicy\MSFT_AADAuthenticationMethodPolicy.psm1: line 557
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:22]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyAuthenticator\MSFT_AADAuthenticationMethodPolicyAuthenticator.psm1: line 758
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:24]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyEmail\MSFT_AADAuthenticationMethodPolicyEmail.psm1: line 496
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:25]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyFido2\MSFT_AADAuthenticationMethodPolicyFido2.psm1: line 524
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:26]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicySms\MSFT_AADAuthenticationMethodPolicySms.psm1: line 472
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:27]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicySoftware\MSFT_AADAuthenticationMethodPolicySoftware.psm1: line 472
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:29]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyTemporary\MSFT_AADAuthenticationMethodPolicyTemporary.psm1: line 541
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:30]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyVoice\MSFT_AADAuthenticationMethodPolicyVoice.psm1: line 485
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:31]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyX509\MSFT_AADAuthenticationMethodPolicyX509.psm1: line 548
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:32]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationStrengthPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 30803
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationStrengthPolicy\MSFT_AADAuthenticationStrengthPolicy.psm1: line 355
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:33]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Could not find existing authorization policy"
+at Get-MgBetaPolicyAuthorizationPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 31745
+at Get-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthorizationPolicy\MSFT_AADAuthorizationPolicy.psm1: line 123
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthorizationPolicy\MSFT_AADAuthorizationPolicy.psm1: line 568
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:35]
+{InvalidOperation}
+System.Exception: [AccessDenied] : You cannot perform the requested operation, required scopes are missing in the token.
+"Error during Export:"
+at Get-MgBetaIdentityConditionalAccessPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 18896
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADConditionalAccessPolicy\MSFT_AADConditionalAccessPolicy.psm1: line 1989
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:35]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADCrossTenantAccessPolicy\MSFT_AADCrossTenantAccessPolicy.psm1: line 343
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:36]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADCrossTenantAccessPolicyConfigurationDefault\MSFT_AADCrossTenantAccessPolicyConfigurationDefault.psm1: line 470
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:36]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaPolicyCrossTenantAccessPolicyPartner<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 33736
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADCrossTenantAccessPolicyConfigurationPartner\MSFT_AADCrossTenantAccessPolicyConfigurationPartner.psm1: line 463
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:42]
+{InvalidOperation}
+System.Exception: [UnknownError] : 
+"Error during Export:"
+at Get-MgBetaEntitlementManagementConnectedOrganization<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.Governance\2.15.0\custom\Get-MgBetaEntitlementManagementConnectedOrganization.ps1: line 162
+at Get-MgBetaEntitlementManagementConnectedOrganization<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.Governance\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 20728
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADEntitlementManagementConnectedOrganization\MSFT_AADEntitlementManagementConnectedOrganization.psm1: line 753
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:42]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Could not find existing external identity policy"
+at Get-MgBetaPolicyExternalIdentityPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 34800
+at Get-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADExternalIdentityPolicy\MSFT_AADExternalIdentityPolicy.psm1: line 67
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADExternalIdentityPolicy\MSFT_AADExternalIdentityPolicy.psm1: line 317
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:42]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgGroup<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Groups\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 45179
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADGroup\MSFT_AADGroup.psm1: line 1122
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:44]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADGroupsSettings\MSFT_AADGroupsSettings.psm1: line 494
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:45]
+{InvalidOperation}
+System.Exception: [AccessDenied] : You cannot perform the requested operation, required scopes are missing in the token.
+"Error during Export:"
+at Get-MgBetaIdentityConditionalAccessNamedLocation<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 18445
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADNamedLocationPolicy\MSFT_AADNamedLocationPolicy.psm1: line 477
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:45]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaRoleManagementDirectoryRoleDefinition<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.Governance\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 118796
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADRoleDefinition\MSFT_AADRoleDefinition.psm1: line 439
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:46]
+{InvalidOperation}
+System.Exception: [UnknownError] : {"errorCode":"PermissionScopeNotGranted","message":"Authorization failed due to missing permission scope RoleEligibilitySchedule.Read.Directory,RoleEligibilitySchedule.ReadWrite.Directory,RoleManagement.ReadWrite.Directory,RoleManagement.Read.Directory,RoleManagement.Read.All.","instanceAnnotations":[]}
+"Error during Export:"
+at Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.Governance\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 123447
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADRoleEligibilityScheduleRequest\MSFT_AADRoleEligibilityScheduleRequest.psm1: line 797
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:46]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaRoleManagementDirectoryRoleDefinition<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.Governance\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 118796
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADRoleSetting\MSFT_AADRoleSetting.psm1: line 1462
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:47]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADSecurityDefaults\MSFT_AADSecurityDefaults.psm1: line 332
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:47]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgServicePrincipal<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Applications\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 32205
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADServicePrincipal\MSFT_AADServicePrincipal.psm1: line 682
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:48]
+{InvalidOperation}
+System.Exception: [AADB2C] : The application does not have any of the required application permissions (IdentityProvider.Read.All, IdentityProvider.ReadWrite.All) to access the resource. 
+"Error during Export:"
+at Get-MgBetaIdentityProvider<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 20297
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADSocialIdentityProvider\MSFT_AADSocialIdentityProvider.psm1: line 350
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:48]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADTenantDetails\MSFT_AADTenantDetails.psm1: line 372
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:07:49]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaPolicyTokenLifetimePolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 46952
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADTokenLifetimePolicy\MSFT_AADTokenLifetimePolicy.psm1: line 376
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:08:05]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADUser\MSFT_AADUser.psm1: line 949
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, C:\m365dsc\AADExport.ps1: line 10
+at <ScriptBlock>, <No file>: line 1
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:03]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaDirectoryAdministrativeUnit<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.DirectoryManagement\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 34975
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAdministrativeUnit\MSFT_AADAdministrativeUnit.psm1: line 1018
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:12]
+{InvalidOperation}
+System.Exception: [AccessDenied] : You cannot perform the requested operation, required scopes are missing in the token.
+"Error during Export:"
+at Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 16518
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationContextClassReference\MSFT_AADAuthenticationContextClassReference.psm1: line 335
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:13]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29855
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicy\MSFT_AADAuthenticationMethodPolicy.psm1: line 557
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:14]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyAuthenticator\MSFT_AADAuthenticationMethodPolicyAuthenticator.psm1: line 758
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:15]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyEmail\MSFT_AADAuthenticationMethodPolicyEmail.psm1: line 496
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:16]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyFido2\MSFT_AADAuthenticationMethodPolicyFido2.psm1: line 524
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:17]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicySms\MSFT_AADAuthenticationMethodPolicySms.psm1: line 472
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:18]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicySoftware\MSFT_AADAuthenticationMethodPolicySoftware.psm1: line 472
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:19]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyTemporary\MSFT_AADAuthenticationMethodPolicyTemporary.psm1: line 541
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:20]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyVoice\MSFT_AADAuthenticationMethodPolicyVoice.psm1: line 485
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:21]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 29720
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationMethodPolicyX509\MSFT_AADAuthenticationMethodPolicyX509.psm1: line 548
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:22]
+{InvalidOperation}
+System.Exception: [accessDenied] : Request Authorization failed
+"Error during Export:"
+at Get-MgBetaPolicyAuthenticationStrengthPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 30803
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthenticationStrengthPolicy\MSFT_AADAuthenticationStrengthPolicy.psm1: line 355
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:23]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Could not find existing authorization policy"
+at Get-MgBetaPolicyAuthorizationPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 31745
+at Get-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthorizationPolicy\MSFT_AADAuthorizationPolicy.psm1: line 123
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADAuthorizationPolicy\MSFT_AADAuthorizationPolicy.psm1: line 568
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:24]
+{InvalidOperation}
+System.Exception: [AccessDenied] : You cannot perform the requested operation, required scopes are missing in the token.
+"Error during Export:"
+at Get-MgBetaIdentityConditionalAccessPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 18896
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADConditionalAccessPolicy\MSFT_AADConditionalAccessPolicy.psm1: line 1989
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:24]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADCrossTenantAccessPolicy\MSFT_AADCrossTenantAccessPolicy.psm1: line 343
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:24]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADCrossTenantAccessPolicyConfigurationDefault\MSFT_AADCrossTenantAccessPolicyConfigurationDefault.psm1: line 470
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:25]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaPolicyCrossTenantAccessPolicyPartner<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 33736
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADCrossTenantAccessPolicyConfigurationPartner\MSFT_AADCrossTenantAccessPolicyConfigurationPartner.psm1: line 463
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:31]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Could not find existing external identity policy"
+at Get-MgBetaPolicyExternalIdentityPolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 34800
+at Get-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADExternalIdentityPolicy\MSFT_AADExternalIdentityPolicy.psm1: line 67
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADExternalIdentityPolicy\MSFT_AADExternalIdentityPolicy.psm1: line 317
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:32]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgGroup<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Groups\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 45179
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADGroup\MSFT_AADGroup.psm1: line 1122
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:33]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADGroupsSettings\MSFT_AADGroupsSettings.psm1: line 494
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:35]
+{InvalidOperation}
+System.Exception: [AccessDenied] : You cannot perform the requested operation, required scopes are missing in the token.
+"Error during Export:"
+at Get-MgBetaIdentityConditionalAccessNamedLocation<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 18445
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADNamedLocationPolicy\MSFT_AADNamedLocationPolicy.psm1: line 477
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:36]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaRoleManagementDirectoryRoleDefinition<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.Governance\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 118796
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADRoleDefinition\MSFT_AADRoleDefinition.psm1: line 439
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:37]
+{InvalidOperation}
+System.Exception: [UnknownError] : {"errorCode":"PermissionScopeNotGranted","message":"Authorization failed due to missing permission scope RoleEligibilitySchedule.Read.Directory,RoleEligibilitySchedule.ReadWrite.Directory,RoleManagement.ReadWrite.Directory,RoleManagement.Read.Directory,RoleManagement.Read.All.","instanceAnnotations":[]}
+"Error during Export:"
+at Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.Governance\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 123447
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADRoleEligibilityScheduleRequest\MSFT_AADRoleEligibilityScheduleRequest.psm1: line 797
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:39]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaRoleManagementDirectoryRoleDefinition<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.Governance\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 118796
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADRoleSetting\MSFT_AADRoleSetting.psm1: line 1462
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:40]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADSecurityDefaults\MSFT_AADSecurityDefaults.psm1: line 332
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:42]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADServicePrincipal\MSFT_AADServicePrincipal.psm1: line 708
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:43]
+{InvalidOperation}
+System.Exception: [AADB2C] : The application does not have any of the required delegated permissions (IdentityProvider.Read.All, IdentityProvider.ReadWrite.All) to access the resource. 
+"Error during Export:"
+at Get-MgBetaIdentityProvider<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 20297
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADSocialIdentityProvider\MSFT_AADSocialIdentityProvider.psm1: line 350
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:43]
+{InvalidOperation}
+System.Management.Automation.RuntimeException: You cannot call a method on a null-valued expression.
+   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)
+   at Get-M365DSCExportContentForResource(Closure, FunctionContext)
+   at System.Management.Automation.PSScriptCmdlet.RunClause(Action`1 clause, Object dollarUnderbar, Object inputToProcess)
+   at System.Management.Automation.CommandProcessorBase.Complete()
+"Error during Export:"
+at Get-M365DSCExportContentForResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 3390
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADTenantDetails\MSFT_AADTenantDetails.psm1: line 372
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:44]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgBetaPolicyTokenLifetimePolicy<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Beta.Identity.SignIns\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 46952
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADTokenLifetimePolicy\MSFT_AADTokenLifetimePolicy.psm1: line 376
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+
+[2024/03/20 01:20:45]
+{InvalidOperation}
+System.Exception: [Authorization_RequestDenied] : Insufficient privileges to complete the operation.
+"Error during Export:"
+at Get-MgUser<Process>, C:\Program Files\WindowsPowerShell\Modules\Microsoft.Graph.Users\2.15.0\exports\ProxyCmdletDefinitions.ps1: line 17124
+at Export-TargetResource, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\DSCResources\MSFT_AADUser\MSFT_AADUser.psm1: line 922
+at Start-M365DSCConfigurationExtract, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCReverse.psm1: line 649
+at Export-M365DSCConfiguration, C:\Program Files\WindowsPowerShell\Modules\Microsoft365DSC\1.24.313.1\Modules\M365DSCUtil.psm1: line 1369
+at <ScriptBlock>, <No file>: line 1
+Tyler.chase@M365x81357093.onmicrosoft.com
+TenantId: M365x81357093.onmicrosoft.com
+
+
+

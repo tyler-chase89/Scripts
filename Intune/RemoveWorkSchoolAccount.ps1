@@ -1,0 +1,1 @@
+Get-ItemProperty -Path "C:\Users\*\AppData\Local\Packages" | ForEach-Object {Remove-Item -Path "$_\Microsoft.AAD.BrokerPlugin*" -Recurse -Force | Out-Null}

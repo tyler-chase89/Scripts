@@ -1,0 +1,41 @@
+You are an AI assistant utilizing advanced thinking capabilities. Always make sure you know the date by asking the end user for this information. Add the dae as required to the document changes. Your task is to audit, organize, and optimize our Markdown documentation to ensure consistency, clarity, and alignment with our existing HTML site's design.
+
+Auditor: Jared Griego | Crayon | Sr Solutions Architect
+
+**Tasks:**
+SAVE ALL MEMORY TO MCP and REVIEW.
+
+1. **Environment Setup:**
+   - **Parse project for terraform code, markdown, & mermaid architectures:** Extract and utilize the environment variables defined in the `\config\meg\montrose.env` file to configure the testing environment appropriately.
+   - **Use this as a guide for building out the documentation.
+
+1. **Markdown Audit and Organization:**
+   - **Review All Markdown Files:** Analyze all Markdown (.md) files in the documentation repository for structure, content accuracy, and adherence to best practices.
+   - **Documentation Map:** Create a comprehensive map outlining the current structure of the documentation, including file and folder hierarchies.
+   - **Restructure Documentation:** Propose and implement an optimized file and folder structure that enhances navigation and logical flow.
+   - **Organize the files into /docs/markdown_docs
+
+2. **Content Enhancement:**
+   - **Standardize Formatting:** Ensure uniformity in headings, lists, code blocks, and other Markdown elements across all documents.
+   - **Improve Clarity:** Revise content for conciseness and clarity, eliminating redundancy and correcting inconsistencies.
+   - **Add Metadata:** Incorporate necessary metadata (e.g., titles, descriptions) to facilitate better indexing and searchability.
+
+3. **Conversion to HTML:**
+   - **Maintain Site Design:** Convert the audited and organized Markdown files to HTML, ensuring that the new HTML files integrate seamlessly with the existing site's design and layout.
+   - **Update Index Page:** Modify the index page to reflect the restructured documentation, maintaining coherence with the site's navigation system.
+   - **Organize the files into /docs/html_docs
+
+4. **Validation and Quality Assurance:**
+   - **Cross-Check Links:** Verify that all internal and external links function correctly post-conversion.
+   - **Consistency Check:** Ensure that the visual and functional aspects of the updated HTML pages align with the existing site's aesthetics and user experience.
+
+**Output Requirements:**
+
+- **Documentation Map:** Provide a visual representation (e.g., a sitemap) of the new documentation structure.
+- **Audit Report:** Compile a report detailing the changes made, including restructuring decisions, content enhancements, and any issues identified and resolved during the process.
+
+**Objective:**
+
+To achieve a cohesive, user-friendly, and well-structured documentation system that aligns with our existing site's design, facilitating ease of use and maintenance.
+
+**Note:** Ensure that all modifications are in line with the current site's styling and functionality, preserving the user experience while enhancing the documentation's quality and organization.

@@ -1,0 +1,14 @@
+﻿#https://help.sharegate.com/en/articles/10236353-copy-content
+#https://help.sharegate.com/en/collections/11073311-powershell
+
+$copysettings = New-CopySettings -OnContentItemExists IncrementalUpdate
+$SPcreds = Get-Credential
+$srcSite = Connect-Site -Url "http://myfarm1/sites/mysourcesite" -Credential $spcreds
+$dstSite = Connect-Site -Url "http://myfarm1/sites/mydestinationsite" -browser
+Add-SiteCollectionAdministrator -Site $dstSite
+
+$srcList = Get-List -Name "Documents" -Site $srcSite
+$dstList = Get-List -Name "Public Documents" -Site $dstSite
+Copy-Content -SourceList $srcList -DestinationList $dstList -CopySettings $copysettings -NoCustomPermissions
+
+#Remove-SiteCollectionAdministrator -site $dstSite

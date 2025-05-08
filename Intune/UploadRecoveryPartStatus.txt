@@ -1,0 +1,13 @@
+﻿Install-Module PnP.PowerShell -Force
+Set-ExecutionPolicy RemoteSigned
+$Password = ConvertTo-SecureString 'PASSWORD' -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential ('ACCOUNTNAME', $password)
+
+$ReagentStatus = reagentc /info
+IF ($ReagentStatus -contains "Disabled") {$ReagentStatus > "C:\$env:COMPUTERNAME-NORE.txt"}
+else {$ReagentStatus > "C:\$env:COMPUTERNAME-RE.txt"}
+
+Connect-PnPOnline -Url "URL to DOCUMENT LIBRARY" -Credentials $Credential
+
+$File = Get-ChildItem "C:\$env:COMPUTERNAME-*RE.txt"
+Add-PnPFile -Folder "Documents" -Path $File.FullName -Checkout

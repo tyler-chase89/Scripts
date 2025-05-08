@@ -1,0 +1,17 @@
+$BLV = Get-BitLockerVolume -MountPoint "C:" | select *
+
+[array]$ID = ($BLV.KeyProtector | Where-Object { $_.KeyProtectorType -eq 'RecoveryPassword' }).KeyProtectorId
+
+if($ID.Length -gt 1){
+
+#looping through all the keys IDs, but skipping the first one.
+
+foreach($item in ($id | select -skip 1)){
+
+    $item
+
+    Remove-BitLockerKeyProtector -MountPoint "C:" -KeyProtectorId $item
+
+    }
+
+}

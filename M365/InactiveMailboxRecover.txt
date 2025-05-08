@@ -1,0 +1,3 @@
+﻿$Inactivemailbox = Get-Mailbox -InactiveMailboxOnly -Identity tony.lee@canoo.com
+
+New-Mailbox -InactiveMailbox $Inactivemailbox.distinguishedname -Name "Tony Lee (Restored)" -FirstName "Tony" -LastName "Lee" -DisplayName "Tony Lee (Restored)" -MicrosoftOnlineServicesID tony.lee@evelozcity.onmicrosoft.com -Password (ConvertTo-SecureString -String "sndfjdksaf!@#" -AsPlainText -Force) -ResetPasswordOnNextLogon $False

@@ -1,0 +1,1 @@
+C:\scripts\psexec.exe -accepteula -S powershell.exe -executionpolicy Bypass -command C:\Scripts\FactoryResetScript.ps1
